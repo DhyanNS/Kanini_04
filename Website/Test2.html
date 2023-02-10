@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function action(){
+            name=document.f1.Name.value;
+            phone=document.f1.Number.value;
+            email=document.f1.email.value;
+            gender=document.f1.Gender.value;
+            
+            document.getElementById("abc").innerHTML="SUCCESSFULLY completed"+name +phone  +email +gender  ;
+            
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Order</legend>
+        <form action="" name="f1">
+            <h2>Place your order here</h2>
+            <table border="2">
+                <tr>
+                    <td><label for="">Full Name</label></td>
+                    <td><input type="text" name="Name" id=""><input type="text" name="" id=""></td>
+            
+        
+                <tr>
+                    <td><label for="">Phone Number</label></td>
+                    <td ><input type="tel" name="Number"></td>
+                </tr>
+                <tr>
+                    <td><label for="">E-Mail</label></td>
+                    <td><input type="email" name="email"></td>
+                </tr>
+                <td>Gender</td>
+                <td><input type="radio" name="Gender" value="male">Male
+                    <input type="radio" value="female" name="Gender">Female
+                </td>
+                
+                <tr>
+                    <td><label for="">Delivery Address</label></td>
+                    <td ><textarea name="" id="" cols="25" rows="5"></textarea>
+                        
+                </tr>
+            </table>
+            <br>
+        </form>
+    </fieldset> 
+    <br>
+    <input type="button" onclick="action();" value="Submit">
+    <p id="abc"></p>
+    <p id="gender"></p>
+    <p id="Delivery"></p>
+</body>
+</html>
