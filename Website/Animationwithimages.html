@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animationwithimages</title>
+    <style>
+        @keyframes animated1
+        {
+            0%{ 
+                background-size: 50%;
+                background-repeat:no-repeat ;
+                background-color: rgb(16, 16, 196);
+                background-image: url(img/hello.gif) ;
+            }
+            25%{
+                background-size: 50%;
+                background-repeat:no-repeat ;
+                background-repeat: no-repeat;
+                background-color: rgb(171, 111, 20);
+                background-image: url(img/person1.gif);
+            }
+            50%{
+                background-size: 50%;
+                background-repeat:no-repeat ;
+                background-color: rgb(147, 15, 92);
+                background-image: url(img/yellow.gif);
+            }
+            75%{
+                background-size: 50%;
+                background-repeat:no-repeat ;
+                background-repeat: no-repeat;
+                background-color: rgb(41, 21, 168);
+                background-image: url(img/go.gif);
+            }
+            100%
+            { background-size: 50%;
+                background-repeat:no-repeat ;
+                background-repeat: no-repeat;
+                background-color: rgb(86, 164, 27);
+                background-image: url(img/cat.gif);
+            }
+
+        }
+        body{
+            animation-name:animated1;
+            animation-duration:25s;
+        }
+    </style>
+
+</head>
+<body>
+    
+</body>
+</html>
