@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+             #container
+             {
+                background-color:blueviolet;   
+                display: flex;
+                flex-direction:row;
+                flex-wrap: wrap;
+                ;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #c91919;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+   
+    </style>
+</head>
+<body>
+    
+   
+        <div class="dropdown" id="container">
+            <span>INFORMATION</span>
+            <div class="dropdown-content">
+            <p>About</p>
+            <p>Serivces</p>
+            <p>contact</p>
+            </div>
+          </div>
+          <div id="container" >
+            <div style="order: 2;border: 2px solid black;">About</div>
+            <div style="order: 1;border: 2px solid black;">Serivces</div>
+            <div style="order:3;border: 2px solid black;">contact</div>
+</body>
+</html>
